@@ -43,7 +43,7 @@ class Book
             cout << "Pages: "<< pages << endl;
 
         }
-
+        /* Getter */
         bool isBookAvailable()
         {
             if( availability.compare("in stock") == 0 )
@@ -57,7 +57,7 @@ class Book
                 return false;
             }
         }
-
+        /* Setter */
         void setAvailability( string aAvailability )
         {
             if( aAvailability.compare("in stock") == 0)
@@ -79,9 +79,14 @@ int main( int argc, char** argv )
 {
     /* Attributes of the object */
     Book book1("Outwitting the devil", "Napoleon Hill", 200, "not available"); /* Creates an object based on the blueprint */
+    /* Call object function */
     book1.bookInfo();
     cout << book1.isBookAvailable() << endl;
-
+    
+    /* Call setter to modify private attibute */
+    book1.setAvailability("in stock");
+    cout << book1.isBookAvailable() << endl;
+    
     /* Attributes of the object */
     Book book2("The subtle art of not giving a f*ck", "Mark Manson", 231, "in stock"); /* Creates an object based on the blueprint*/
     book2.bookInfo();
