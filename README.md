@@ -1,4 +1,4 @@
-# C-
+# C PLUS PLUS
 C++ study and practice
 
 ## Object-oriented programming (OOP)
